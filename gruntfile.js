@@ -1,10 +1,10 @@
 /*global module:false*/
 module.exports = function (grunt) {
   grunt.initConfig({
-    // jasmine_nodejs: {
-      // options: { specNameSuffix: 'Spec.js' },
-      // spec: { specs: 'test/spec/**/*.js' }
-    // },
+    jasmine_nodejs: {
+      options: { specNameSuffix: 'Spec.js' },
+      spec: { specs: 'test/spec/**/*.js' }
+    },
     standard: {
       app: {
         src: ['index.js', 'test/**/*.js']
@@ -24,10 +24,10 @@ module.exports = function (grunt) {
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-standard')
-  // grunt.loadNpmTasks('grunt-jasmine-nodejs')
+  grunt.loadNpmTasks('grunt-jasmine-nodejs')
   // grunt.loadNpmTasks('grunt-bump')
 
-  grunt.registerTask('test', ['standard'])
+  grunt.registerTask('test', ['standard', 'jasmine_nodejs'])
   grunt.registerTask('default', ['test'])
 
   // grunt.registerTask('release:patch', ['test', 'bump:patch'])

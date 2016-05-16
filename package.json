@@ -17,6 +17,17 @@
     "url",
     "json"
   ],
+  "standard": {
+    "globals": [
+      "it",
+      "describe",
+      "expect",
+      "jasmine",
+      "beforeAll",
+      "afterAll",
+      "beforeEach"
+    ]
+  },
   "author": "Alex Chesters",
   "license": "MIT",
   "bugs": {
@@ -28,6 +39,8 @@
   },
   "devDependencies": {
     "grunt": "^1.0.1",
-    "grunt-standard": "^2.0.0"
+    "grunt-jasmine-nodejs": "^1.5.2",
+    "grunt-standard": "^2.0.0",
+    "nock": "^8.0.0"
   }
 }
