@@ -1,0 +1,25 @@
+{
+  "name": "rss-url-parser",
+  "version": "1.0.0",
+  "description": "A simple node module to parse an RSS feed from a URL",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexChesters/rss-url-parser.git"
+  },
+  "keywords": [
+    "rss",
+    "feed",
+    "parser",
+    "url",
+    "json"
+  ],
+  "author": "Alex Chesters",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexChesters/rss-url-parser/issues"
+  }
+}
