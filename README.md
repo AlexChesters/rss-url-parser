@@ -9,5 +9,5 @@ A simple node module to parse an RSS feed URL and return an array of JSON object
 ```javascript
 const parser = require('rss-url-parser')
 
-parser.parse(http://mydomain.com/rss).then((data) => console.log(data))
+parser.parse('http://mydomain.com/rss').then((data) => console.log(data))
 ```
