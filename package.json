@@ -34,7 +34,7 @@
     "url": "https://github.com/AlexChesters/rss-url-parser/issues"
   },
   "dependencies": {
-    "feedparser": "^1.1.4",
+    "feedparser": "^2.1.0",
     "request": "^2.72.0"
   },
   "devDependencies": {
