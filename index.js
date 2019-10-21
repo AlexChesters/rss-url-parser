@@ -1,14 +1,12 @@
-'use strict'
-
 const FeedParser = require('feedparser')
 const request = require('request')
 
 module.exports = function (url) {
   return new Promise(function (resolve, reject) {
-    let events = []
+    const events = []
 
-    let req = request(url)
-    let parser = new FeedParser()
+    const req = request(url)
+    const parser = new FeedParser()
 
     req.on('error', (err) => {
       return reject(err)
@@ -16,7 +14,7 @@ module.exports = function (url) {
 
     req.on('response', (res) => {
       if (res.statusCode !== 200) {
-        return reject({message: `Bad status code: ${res.statusCode}`})
+        return reject(new Error(`Bad status code: ${res.statusCode}`))
       }
       return req.pipe(parser)
     })
@@ -34,7 +32,6 @@ module.exports = function (url) {
 
       while (item) {
         events.push(item)
-        // If there is no next item, parser.read() will return null, breaking the loop
         item = parser.read()
       }
     })

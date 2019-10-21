@@ -4,7 +4,7 @@
   "description": "A simple node module to parse an RSS feed from a URL",
   "main": "index.js",
   "scripts": {
-    "test": "grunt test"
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -17,17 +17,6 @@
     "url",
     "json"
   ],
-  "standard": {
-    "globals": [
-      "it",
-      "describe",
-      "expect",
-      "jasmine",
-      "beforeAll",
-      "afterAll",
-      "beforeEach"
-    ]
-  },
   "author": "Alex Chesters",
   "license": "MIT",
   "bugs": {
@@ -38,10 +27,11 @@
     "request": "^2.72.0"
   },
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-bump": "^0.8.0",
-    "grunt-jasmine-nodejs": "^1.5.2",
-    "grunt-standard": "^2.0.0",
-    "nock": "^8.0.0"
+    "eslint": "^6.5.1",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
   }
 }
