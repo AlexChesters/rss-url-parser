@@ -1,5 +1,7 @@
 /* eslint-env jest */
 
+const fs = require('fs')
+
 const nock = require('nock')
 
 const parser = require('./')
@@ -31,5 +33,17 @@ describe('rss-url-parser', () => {
     await expect(parser('https://foo.com')).rejects.toEqual(new Error(
       'Not a feed'
     ))
+  })
+  test('resolves if the response is expected', async () => {
+    const stubData = fs.readFileSync('./stub-data/feed.xml', 'utf-8')
+    nock('https://foo.com')
+      .get('/')
+      .reply(200, stubData)
+
+    const expected = expect.arrayContaining([expect.objectContaining({
+      author: expect.any(String)
+    })])
+
+    await expect(parser('https://foo.com')).resolves.toEqual(expected)
   })
 })
