@@ -6,7 +6,9 @@
   "scripts": {
     "test:lint": "eslint .",
     "test:unit": "jest",
-    "test": "npm run test:unit && npm run test:lint"
+    "test": "npm run test:unit && npm run test:lint",
+    "preversion": "npm test",
+    "postversion": "git push --follow-tags && npm publish"
   },
   "engines": {
     "node": "12.x.x",
