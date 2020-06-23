@@ -13,3 +13,8 @@ const parser = require('rss-url-parser')
 
 await parser('http://mydomain.com/rss')
 ```
+
+# Notices
+The stub data used for testing is provided by
+[Lorem RSS](https://lorem-rss.herokuapp.com/); The data is licensed under a
+Creative Commons Attribution 3.0 Unported License.
