@@ -1,4 +1,5 @@
 # rss-url-parser
+![CI](https://github.com/AlexChesters/rss-url-parser/workflows/CI/badge.svg)
 
 A simple node module to parse an RSS feed URL and return an array of JSON objects
 
