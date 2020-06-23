@@ -1,8 +1,8 @@
 const FeedParser = require('feedparser')
 const request = require('request')
 
-module.exports = function (url) {
-  return new Promise(function (resolve, reject) {
+module.exports = (url) => {
+  return new Promise((resolve, reject) => {
     const events = []
 
     const req = request(url)
