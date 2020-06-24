@@ -10,5 +10,11 @@ If an error occurs when fetching the feed, an
 [Error](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error)
 object will be returned, previously this was a plain JavaScript object.
 
+## [1.2.0] - 2020-06-23
+Bump all dependencies to latest version
+
+## [1.1.0] - 2019-10-24
+Bump to v2 of `feedparser`
+
 ## [1.0.0] - 2016-05-16
 First release of the library
