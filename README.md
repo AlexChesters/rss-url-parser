@@ -1,6 +1,6 @@
 # rss-url-parser
 ![CI](https://github.com/AlexChesters/rss-url-parser/workflows/CI/badge.svg)
-[![npm version](https://badge.fury.io/js/uk-traffic.svg)](https://badge.fury.io/js/uk-traffic)
+[![npm version](https://badge.fury.io/js/rss-url-parser.svg)](https://badge.fury.io/js/rss-url-parser)
 
 A simple node module to parse an RSS feed URL and return an array of JSON objects
 
