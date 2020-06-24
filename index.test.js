@@ -12,9 +12,7 @@ describe('rss-url-parser', () => {
       .get('/')
       .replyWithError({ message: 'something awful happened' })
 
-    await expect(parser('https://foo.com')).rejects.toEqual({
-      message: 'something awful happened'
-    })
+    await expect(parser('https://foo.com')).rejects.toThrow()
   })
   test('rejects when a non-200 status code is received', async () => {
     nock('https://foo.com')
