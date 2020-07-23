@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.1] - 2020-07-23
+Fixes a security vulnerability
+([lodash (#1523)](https://www.npmjs.com/advisories/1523))
+
 ## [2.1.0] - 2020-06-30
 Slightly tweaked the example in the README to make it more useful
 
