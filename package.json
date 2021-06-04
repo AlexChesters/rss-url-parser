@@ -11,7 +11,7 @@
     "postversion": "git push --follow-tags && npm publish"
   },
   "engines": {
-    "node": "12.x.x",
+    "node": "^12 || ^14 || ^16",
     "npm": "6.x.x"
   },
   "repository": {
