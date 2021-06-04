@@ -1,6 +1,6 @@
 {
   "name": "rss-url-parser",
-  "version": "2.1.3",
+  "version": "2.2.0",
   "description": "A simple node module to parse an RSS feed from a URL",
   "main": "index.js",
   "scripts": {
