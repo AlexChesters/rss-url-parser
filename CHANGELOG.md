@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.0] - 2023-06-21
+* Drops support for NodeJS 12.x and 14.x
+* Adds support for NodeJS 18.x and 20.x
+
 ## [2.2.4] - 2022-05-10
 * Fixes some security vulnerabilities in dependencies
 
