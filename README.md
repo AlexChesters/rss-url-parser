@@ -1,21 +1,3 @@
 # rss-url-parser
-[![npm version](https://badge.fury.io/js/rss-url-parser.svg)](https://badge.fury.io/js/rss-url-parser)
-![CI](https://github.com/AlexChesters/rss-url-parser/workflows/CI/badge.svg)
 
-A simple Node.js module to parse an RSS feed URL and return an array of JSON objects
-
-# Installation
-`npm install rss-url-parser --save`
-
-# Usage
-```javascript
-const parser = require('rss-url-parser')
-
-const data = await parser('http://mydomain.com/rss')
-data.forEach((item) => console.log(item))
-```
-
-# Notices
-The stub data used for testing is provided by
-[Lorem RSS](https://lorem-rss.herokuapp.com/); The data is licensed under a
-Creative Commons Attribution 3.0 Unported License.
+> NOTE: `rss-url-parser` is deprecated and will no longer receive future updates
